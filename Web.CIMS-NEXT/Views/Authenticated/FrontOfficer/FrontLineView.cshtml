@@ -1,0 +1,223 @@
+﻿
+@{
+    ViewBag.Title = "FrontLineView";
+    Layout = "~/Views/Shared/_Public/_Layout.cshtml";
+}
+
+
+
+ <!--Front Line Container-->
+    <div id="front-line-container">
+
+        <!--Full Clients Information Modal-->
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#infoModal" id="infoModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" aria-label="Close" type="button">.<i class="fa fa-close"></i></button>
+                        <h4 id="infoModalLabel" class="modal-title text-bold">Full Client's Details</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <!--First Info Group-->
+                        <div class="row">
+                            <ul class="list-unstyled">
+                                <li class="col-md-3"><p class="text-bold"> Customer Name </p></li>
+                                <li class="col-md-3"><p class="text-bold"> E-mail</p></li>
+                                <li class="col-md-3"><p class="text-bold"> Account Officer  </p></li>
+                                <li class="col-md-3"><p class="text-bold">Debit Account </p></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <ul class="list-unstyled">
+                                <li class="col-md-3"><p> Some Name </p></li>
+                                <li class="col-md-3"><p> Some E-mail</p></li>
+                                <li class="col-md-3"><p> Account Officer Name </p></li>
+                                <li class="col-md-3"><p>##########</p></li>
+                            </ul>
+                        </div>
+                        <!--Second Info Group-->
+                        <div class="row">
+                            <ul class="list-unstyled">
+                                <li class="col-md-3"><p class="text-bold"> Address Name </p></li>
+                                <li class="col-md-3"><p class="text-bold"> Account Officer E-mail</p></li>
+                                <li class="col-md-3"><p class="text-bold"> Debit Currency  </p></li>
+                                <li class="col-md-3"><p class="text-bold">Phone Number </p></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <ul class="list-unstyled">
+                                <li class="col-md-3"><p> Address Name </p></li>
+                                <li class="col-md-3"><p> Account Officer E-mail</p></li>
+                                <li class="col-md-3"><p> Currency </p></li>
+                                <li class="col-md-3"><p>##########</p></li>
+                            </ul>
+                        </div>
+                        <!--Third Info Group-->
+                        <div class="row">
+                            <ul class="list-unstyled">
+                                <li class="col-md-3"><p class="text-bold"> Solicitation Number </p></li>
+                                <li class="col-md-3"><p class="text-bold"> NUIT</p></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <ul class="list-unstyled">
+                                <li class="col-md-3"><p> ##########</p></li>
+                                <li class="col-md-3"><p> ##########</p></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+        <!--/Clients Information Modal-->
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2">
+                <h3 class="text-bold">Client's Info's</h3>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-bold">Account Balance</h3>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-bold">Operations summary</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+
+            <div class="col-md-2"></div>
+            <!--Customer Information card-->
+            <div class="col-md-6">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="text-bold">Customer Name</p>
+                                <p>Unkown</p>
+                            </li>
+                            <li>
+                                <p class="text-bold">Debit Account </p>
+                                <p>##############</p>
+                            </li>
+                            <li>
+                                <p class="text-bold">Debit Currency</p>
+                                <p>Currency</p>
+                            </li>
+                            <li>
+                                <p class="text-bold">Account Officer</p>
+                                <p>Officer</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!--Account Balance Row-->
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <h3 style="font-size:2rem"><i class="fa fa-money"></i> 50,000,00 MZN</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <button data-target="#infoModal" data-toggle="modal" class="btn btn-danger btn-block">MORE INFORMATION</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Operations Summary-->
+                    <div class="col-md-2">
+                        <p class="text-bold">Latest Operations</p>
+                        <ul class="list-unstyled">
+                            <li>Operation ###</li>
+                            <li>Operation ###</li>
+                            <li>Operation ###</li>
+                            <li>
+                                <button class="btn btn-danger ">SEE MORE</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ Operations Summary-->
+                </div>
+            </div>
+            <!--/Customer Information Card-->
+           
+            <div class="col-md-1"></div>
+        </div>
+
+        <!--Operations For Front Line Officer-->
+        <section id="operations" class="row">
+
+
+           
+                <div class="col-md-2 col-sm-2"></div>
+                <div class="col-md-2 col-sm-4">
+                    <button>
+
+                        <div class="card text-white text-center bg-black mb-3 card-style">
+                            <div class="card-header">
+                                <h3 class="">
+                                    Perform OTT
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <i class="fa fa-plus-square fa-4x"></i>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="col-md-2 col-sm-4">
+                    <button>
+
+                        <div class="card text-white text-center bg-primary mb-3 card-style">
+                            <div class="card-header">
+                                <h3 class="">
+                                    Operation Name
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <i class="fa fa-plus-square fa-4x"></i>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="col-md-2 col-sm-4">
+                    <button>
+
+                        <div class="card text-white text-center bg-green mb-3 card-style">
+                            <div class="card-header">
+                                <h3 class="">
+                                    Operation Name
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <i class="fa fa-plus-square fa-4x"></i>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="col-md-2 col-sm-41">
+                    <button>
+
+                        <div class="card text-white text-center bg-red-active mb-3 card-style">
+                            <div class="card-header">
+                                <h3 class="">
+                                    Operation Name
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <i class="fa fa-plus-square fa-4x"></i>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-md-2 col-sm-2"></div>
+            
+        </section>
+        <!-- /Operations For Front Line Officer-->
+    </div>

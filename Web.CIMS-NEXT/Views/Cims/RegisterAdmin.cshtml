@@ -1,0 +1,41 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Login";
+}
+
+
+<section>
+    <div class="login-box">
+        <div class="login-logo">
+            <img src="~/Public/img/sb-logo.png" alt="" />
+        </div>
+        <div class="login-box-body">
+            <form action="submit" method="post">
+                <div class="form-group row has-feedback">
+                    <input type="email" value="" placeholder="A NUMBER" class="form-control">
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+
+                </div>
+                <div class="form-group row has-feedback">
+                    <input type="password" value="" placeholder="PASSWORD" class="form-control">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <button id="btnTodashboard"
+                        type="submit"
+                        class="btn btn-primary btn-block btn-flat"
+                        onclick="@("window.location.href='" + @Url.Action("index","Teller") + "'");">
+                    Login
+
+                </button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+

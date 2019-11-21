@@ -1,0 +1,3 @@
+C:\Users\a238082\source\repos\Web.CIMS-NEXT\obj\Debug\netcoreapp3.0\Web.CIMS-NEXT.csprojAssemblyReference.cache
+C:\Users\a238082\source\repos\Web.CIMS-NEXT\obj\Debug\netcoreapp3.0\Web.CIMS-NEXT.AssemblyInfoInputs.cache
+C:\Users\a238082\source\repos\Web.CIMS-NEXT\obj\Debug\netcoreapp3.0\Web.CIMS-NEXT.AssemblyInfo.cs

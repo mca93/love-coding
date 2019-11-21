@@ -1,0 +1,72 @@
+﻿@model Web.CIMS_NEXT.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+    <section>
+        <div class="login-box">
+            <div class="login-logo">
+                Login Page
+            </div>
+            <div class="login-logo">
+                <img src="~/Public/img/sb-logo.png" alt="" />
+            </div>
+            
+            @if (ViewBag.UserNameError != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewBag.UserNameError
+                </div>
+            }
+            @if (ViewBag.PasswordError != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewBag.PasswordError
+                </div>
+            }
+            <div class="login-box-body">
+
+                @using (Html.BeginForm("Login", "CIMS", FormMethod.Post))
+                {
+                    <div class="form-group row has-feedback">
+                        @Html.TextBoxFor(model => model.UserName, null, new { @class = "form-control", @placeholder = "Ex: A233246" })
+                        @*<input type="text" value=""  class="form-control">*@
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+
+                    </div>
+                    <div class="form-group row has-feedback">
+                        @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = "Insert your password" })
+
+                        @*<input type="password" value="" placeholder="PASSWORD" class="form-control">*@
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit"
+                                    class="btn btn-primary btn-block btn-flat">
+                                Login
+
+                            </button>
+                        </div>
+                    </div>
+                }
+
+                @*<form action="submit" method="post"></form>*@
+            </div>
+            @*<div class="row">
+            <div class="col-md-12">
+
+                <button
+                        type="submit"
+                        class="btn btn-primary btn-block btn-flat"
+                        onclick="@("window.location.href='" + @Url.Action("index","Teller") + "'");" >
+                    Login
+
+                </button>
+            </div>
+        </div>*@
+        </div>
+        
+    </section>
+

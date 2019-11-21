@@ -1,0 +1,33 @@
+﻿
+
+.content{
+    height: 90vh;
+}
+
+
+.center-container{
+    display:flex;
+    flex-flow: wrap;
+    justify-items:center;
+    align-items:center;
+    height:100%;
+    width:100%;
+}
+/* ========== FrontLine View ==========*/
+
+/*Card Style*/
+#front-line-container{
+    
+}
+
+.card-style {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+#operations button {
+    border: none;
+    background: none;
+}

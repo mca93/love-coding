@@ -1,0 +1,107 @@
+﻿@{
+    Layout = "~/Views/Shared/_Authenticated/_Layout.cshtml";
+}
+
+
+@section leftSideNav{
+    @RenderPage("../../../Shared/_Authenticated/_Partials/_AdminLeftSideNav.cshtml")
+}
+
+<section>
+
+    <div class="center-container">
+
+
+        <div class="row" style="width:100%">
+            <div class="col-md-6 col-md-offset-4">
+                <form method="post">
+                    <div class="form-group row">
+                        <div class="col-md-7" style="padding-right:0px">
+                            <input type="text" placeholder="Insira o 'A' do Colaborador. Ex: A233246" class="form-control">
+
+                        </div>
+                        <div class="col-md-1" style="padding-left: 0px; margin-left:0px">
+                            <a class="btn btn-primary" onclick="window.location.href='/FrontOfficer/FrontLineView';">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+     </div>
+</section>
+<section id="searched_user">
+    @*<div class="register-box">
+        <div class="register-box-body">*@
+            <form method="post">
+
+                <div class="row" style="width:100%">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="surname">Apelido</label>
+                            <input type="text" value="Assane" class="form-control" id="surname" readonly>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="surname">Nome</label>
+                            <input type="text" value="Muarucha" class="form-control" readonly>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="surname">E-mail</label>
+                            <input type="text" value="Muarucha.Assane@standardbank.co.mz" class="form-control" readonly>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="width:100%">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="department">Departamento</label>
+                            <input type="text" value="MZ:Change and Enablement" class="form-control" id="department" readonly>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="role">Papel</label>
+                            <select type="text" value="Muarucha" class="form-control" id="role">
+                                <option>Originacao</option>
+                                <option>Verificacao</option>
+                                <option>Excepcao</option>
+                                <option>Confirmacao</option>
+                                <option>Atribuicao de Cambio</option>
+                                <option>Autorizacao</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-top:30px;">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="approve">
+                            <label class="form-check-label" for="approve">Aprovar e notificar o utilizador.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:100px">
+                    <div class="col-md-4 col-md-offset-2">
+                        <button type="button" class="btn btn-info">Fechar a Janela</button>
+                    </div>
+                    <div class="col-md-4 col-md-offset-2">
+                        <button type="button" class="btn btn-primary">Adicionar Utilizador</button>
+                    </div>
+                </div>
+            </form>
+            @*</div>
+        </div>*@
+</section>
+
+
